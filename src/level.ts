@@ -1,40 +1,32 @@
-import { DefaultLoader, Engine, ExcaliburGraphicsContext, Scene, SceneActivationContext } from "excalibur";
-import { Player } from "./player";
+import * as ex from 'excalibur'
+import { Spider } from './spider'
+import { Shape, ShapeType } from './shape'
+import { create_hsl_color } from './utils'
 
-export class MyLevel extends Scene {
-    override onInitialize(engine: Engine): void {
-        // Scene.onInitialize is where we recommend you perform the composition for your game
-        const player = new Player();
-        this.add(player); // Actors need to be added to a scene to be drawn
-    }
+export class MyLevel extends ex.Scene {
+    backgroundColor = ex.Color.White
 
-    override onPreLoad(loader: DefaultLoader): void {
-        // Add any scene specific resources to load
-    }
+    override onInitialize(engine: ex.Engine): void {
+        const seed = 122345
+        const randomizer = new ex.Random(seed)
+        const shapes = []
+        for (let i = 0; i < 10; i += 1) {
+            const shape = new Shape({
+                x: Math.random() * 800,
+                y: Math.random() * 600,
+                width: Math.random() * 200 + 100,
+                height: Math.random() * 200 + 100,
+                type: randomizer.pickOne(Object.values(ShapeType)),
+                color: create_hsl_color(randomizer.floating(0, 1), 0.6, 0.5),
+            })
+            shapes.push(shape)
+            this.add(shape)
+        }
 
-    override onActivate(context: SceneActivationContext<unknown>): void {
-        // Called when Excalibur transitions to this scene
-        // Only 1 scene is active at a time
-    }
+        const spider = new Spider({ x: 50, y: 50 })
+        this.add(spider)
 
-    override onDeactivate(context: SceneActivationContext): void {
-        // Called when Excalibur transitions away from this scene
-        // Only 1 scene is active at a time
-    }
-
-    override onPreUpdate(engine: Engine, elapsedMs: number): void {
-        // Called before anything updates in the scene
-    }
-
-    override onPostUpdate(engine: Engine, elapsedMs: number): void {
-        // Called after everything updates in the scene
-    }
-
-    override onPreDraw(ctx: ExcaliburGraphicsContext, elapsedMs: number): void {
-        // Called before Excalibur draws to the screen
-    }
-
-    override onPostDraw(ctx: ExcaliburGraphicsContext, elapsedMs: number): void {
-        // Called after Excalibur draws to the screen
+        this.camera.clearAllStrategies()
+        this.camera.strategy.elasticToActor(spider, 0.05, 0.1)
     }
 }
