@@ -1,0 +1,12 @@
+= OLC CodeJam 2025
+:toc:
+
+:leveloffset: +1
+
+include::goals.adoc[]
+
+include::ideas.adoc[]
+
+include::game-concept.adoc[]
+
+:leveloffset: -1

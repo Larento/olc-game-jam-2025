@@ -1,0 +1,95 @@
+= Ideas
+
+We can go in the obvious direction and a not so obvious one. I think it's better to be straightforward than quirky. There are also different types of games to make - a puzzle-like game or more of a hands-on action-packed type of game. I'm leaning towards the second one.
+
+[cols="2,1,3,1,1,1"]
+|===
+| Name
+| Genre
+| Description
+| Originality (0-4)
+| Effort (0-4)
+| Imagined fun (0-4)
+
+| Tetris
+| Puzzle, action
+| Just good old Tetris.
+| 0
+| 1
+| 4
+
+| Cut me Up
+| Puzzle, time-attack
+| Cut out a shape as close as possible to original template.
+| 1
+| 2
+| 1
+
+| Jizzler
+| Puzzle
+| Complete a jigsaw puzzle where pieces have interesting shapes.
+| 0
+| 2
+| 2
+
+| Reshaped
+| Puzzle
+| Relaxing origami folding. Can be fun if you get into it and the controls aren't super clunky.
+| 1
+| 4
+| 3
+
+| Quench my Thirst
+| Puzzle
+| Draw a shape to complete a level thing-a-ma-bob. A-la Feed me Oil.
+| 0
+| 3
+| 2
+
+| No Lifting!
+| Puzzle
+| Draw a shape without lifting the pencil (or the mouse, or the finger).
+| 1
+| 2
+| 1
+
+| Draw Bridge
+| Puzzle
+| Draw bridges to allow vehicles to pass through to the other side.
+| 0
+| 3
+| 3
+
+| Rock-it!
+| Puzzle, action
+| Draw crazy shapes that fly. Score points for most crazy ones that still make it high in the air. Remember about weight and air resistance!
+| 2
+| 3
+| 4
+
+| Terraneous Serendipity
+| Racing, action, time-attack
+| Draw bike wheels and drive it around weird terrain. When you're finished drawing your bike, you get to drive it. Let's see how far you can go!
+| 2
+| 3
+| 3
+
+| Pressed for Time
+| Puzzle, time-attack
+| You work at an unusual metal stamping factory. Your job is to shape workpieces into parts. But the guy who gives you orders is a total nut. Unlike a regular metal stampimg process, the part you have to make always changes, so be on high alert and use only the stamping presses you need. Sometimes you also have to flip or rotate the workpiece. Using different combinations of presses you can make (or ruin) you part, at which point you have to finish the next one already!
+| 3
+| 4
+| 4
+
+| Shape Hopper
+| Platformer, action
+| You are a spider trapped in a weird dimension. Naturally, you want to escape this wretched place. But for that you need to find the exit first! Luckily you have your spidey senses that point towards the direction of exit. Jump from one moving shape to another, marching towards freedom. Be careful to not fall into the void!
+| 2
+| 2
+| 3
+
+|===
+
+== Winner
+
+I think I'm going to go with *Shape Hopper*. I think there's some fun to be had with procedural shape and level generation.
