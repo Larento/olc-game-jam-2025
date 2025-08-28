@@ -194,6 +194,15 @@ const ShapePolygonApproximator: ShapePolygonApproximationMethods = {
             precision: 100,
         })
     },
+    [ShapeType.lemniscate](circumcircle) {
+        const { cos, sin } = Math
+        const { radius: r } = circumcircle
+        return get_parametric_curve_points({
+            precision: 100,
+            x: (t) => (r * cos(t)) / (1 + sin(t) ** 2),
+            y: (t) => (r * cos(t) * sin(t)) / (1 + sin(t) ** 2),
+        })
+    },
     [ShapeType.reuleaux_trinagle](circumcircle) {
         return get_reuleaux_polygon_points(circumcircle, 3)
     },
