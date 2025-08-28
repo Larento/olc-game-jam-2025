@@ -1,0 +1,6 @@
+= Techinal stuff
+
+1. Get point ofcurve
+2. Calculate the centroid of resulting hape
+3. Find farthest pointfrom centroid
+4. Scale and translate all points to fit into the centroid circumcircle
