@@ -80,7 +80,7 @@ export class LevelSelect extends ex.Scene {
         container.className = 'level-select-container'
 
         const logo = document.createElement('img')
-        logo.src = '/logo.png'
+        logo.src = 'logo.png'
         logo.id = 'logo'
 
         const heading = document.createElement('header')
