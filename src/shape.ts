@@ -515,4 +515,28 @@ const ShapePolygonCreators: ShapePolygonCreator = {
     [ShapeType.reuleaux_hexagon](params) {
         return get_reuleaux_polygon(params, 6)
     },
+    [ShapeType.circle]: function (args: ShapePolygonCreatorParams): ShapePolygon {
+        throw new Error('Function not implemented.')
+    },
+    [ShapeType.semi_circle]: function (args: ShapePolygonCreatorParams): ShapePolygon {
+        throw new Error('Function not implemented.')
+    },
+    [ShapeType.cresent_moon]: function (args: ShapePolygonCreatorParams): ShapePolygon {
+        throw new Error('Function not implemented.')
+    },
+    [ShapeType.rectangle]: function (args: ShapePolygonCreatorParams): ShapePolygon {
+        throw new Error('Function not implemented.')
+    },
+    [ShapeType.rhombus]: function (args: ShapePolygonCreatorParams): ShapePolygon {
+        throw new Error('Function not implemented.')
+    },
+    [ShapeType.trapezoid]: function (args: ShapePolygonCreatorParams): ShapePolygon {
+        throw new Error('Function not implemented.')
+    },
+    [ShapeType.parallelogram]: function (args: ShapePolygonCreatorParams): ShapePolygon {
+        throw new Error('Function not implemented.')
+    },
+    [ShapeType.star]: function (args: ShapePolygonCreatorParams): ShapePolygon {
+        throw new Error('Function not implemented.')
+    },
 }
