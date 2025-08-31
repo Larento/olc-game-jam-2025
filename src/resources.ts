@@ -1,7 +1,7 @@
 import { ImageSource, Loader } from 'excalibur'
 
 export const Resources = {
-    spider_walk_animation_spritesheet: new ImageSource('./canvas.png'),
+    spider_walk_animation_spritesheet: new ImageSource('./spritesheet.png'),
 } as const
 
 // We build a loader and add all of our resources to the boot loader
